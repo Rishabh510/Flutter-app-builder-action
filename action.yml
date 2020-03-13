@@ -1,5 +1,13 @@
 name: 'Flutter app builder'
 description: 'A GitHub action to auto build apks for release for flutter projects'
+author: 'takuyaohashi'
+inputs:
+  flutter-version:
+    description: 'The Flutter version to download'
+    default: 'latest'
+  channel:
+    description: 'The Flutter channel to download'
+    default: 'stable'
 runs:
   using: 'docker'
   image: 'Dockerfile'
