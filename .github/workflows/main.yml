@@ -1,0 +1,29 @@
+name: "Flutter app builder"
+on: [push]
+jobs:
+  build:
+    name: install dependencies
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+    - uses: actions/checkout@v2
+
+    - name: install dependencies
+      uses: Rishabh510/Flutter-app-builder-action@master
+      with:
+        args: pub get
+
+    - name: clean build
+      uses: Rishabh510/Flutter-app-builder-action@master
+      with:
+        args: clean
+        
+    - name: run tests
+      uses: Rishabh510/Flutter-app-builder-action@master
+      with:
+        args: test
+
+    - name: build apk
+      uses: Rishabh510/Flutter-app-builder-action@master
+      with:
+        args: build apk --release
