@@ -1,0 +1,5 @@
+name: 'Flutter app builder'
+description: 'A GitHub action to auto build apks for release for flutter projects'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
