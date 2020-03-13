@@ -29,8 +29,10 @@ jobs:
 #       uses: Rishabh510/Flutter-app-builder-action@master
 #       with:
 #         args: build apk --debug --split-per-abi
-        
+#         args: build apk --release
+
     - name: build apk
       uses: steebchen/flutter@v1.0.0
       with:
-        args: build apk --release
+        args: run
+
