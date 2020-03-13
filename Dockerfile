@@ -1,7 +1,8 @@
 FROM gableroux/flutter
 
 LABEL version="1.0.0"
-LABEL name="Flutter-app-builder-action"
+# LABEL name="Flutter-app-builder-action"
+LABEL name="flutter"
 LABEL repository="http://github.com/Rishabh510/Flutter-app-builder-action"
 LABEL homepage="http://github.com/Rishabh510/Flutter-app-builder-action"
 
