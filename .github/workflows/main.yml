@@ -31,8 +31,9 @@ jobs:
 #         args: build apk --debug --split-per-abi
 #         args: build apk --release
 
-    - name: build apk
-      uses: steebchen/flutter@v1.0.0
-      with:
-        args: run
+#     - name: build apk
+#       uses: steebchen/flutter@v1.0.0
 
+    - name: Flutter action
+      uses: subosito/flutter-action@v1.2.0
+    - run: flutter build apk --debug --split-per-abi
