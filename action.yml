@@ -4,9 +4,11 @@ author: 'takuyaohashi'
 inputs:
   flutter-version:
     description: 'The Flutter version to download'
+    required: False
     default: 'latest'
   channel:
     description: 'The Flutter channel to download'
+    required: False
     default: 'stable'
 runs:
   using: 'docker'
