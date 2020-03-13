@@ -2,7 +2,7 @@ name: "Flutter app builder"
 on: [push]
 jobs:
   build:
-    name: install dependencies
+    name: Build apk
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
