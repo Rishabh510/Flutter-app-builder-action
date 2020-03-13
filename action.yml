@@ -1,6 +1,6 @@
 name: 'Flutter app builder'
 description: 'A GitHub action to auto build apks for release for flutter projects'
-author: 'takuyaohashi'
+author: 'Rishabh510'
 inputs:
   flutter-version:
     description: 'The Flutter version to download'
